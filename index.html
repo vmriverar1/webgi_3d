@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+	<meta name="description" content="Threejs demo landing page for product visualization using WEBGi">
+
+	<meta property="og:url" content="http://drill-webgi-tutorial.vercel.app">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Threejs demo landing page for product visualization using WEBGi">
+	<meta property="og:description" content="Threejs demo landing page for product visualization using WEBGi">
+	<meta property="og:image" content="http://drill-webgi-tutorial.vercel.app/images/preview.jpg">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="drill-webgi-tutorial.vercel.app">
+	<meta property="twitter:url" content="http://drill-webgi-tutorial.vercel.app">
+	<meta name="twitter:title" content="Threejs demo landing page for product visualization using WEBGi">
+	<meta name="twitter:description"
+		content="Threejs demo landing page for product visualization using WEBGi">
+	<meta name="twitter:image" content="http://drill-webgi-tutorial.vercel.app/images/preview.jpg">
+
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="www.neotix.com.br">
+
+	<meta charset="UTF-8" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#F2CE6E">
+	<meta name="theme-color" content="#F2CE6E">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+
+    <!--Add this script tag in the page head-->
+    <script src="https://dist.pixotronics.com/webgi/runtime/viewer-0.7.3.js"> </script>
+    <!--Add the viewer element somewhere inside the body of the page.-->
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script> -->
+	<script src="https://recursos.sistemaveme.com/node_modules/gsap/dist/gsap.min.js"></script>
+	<script src="https://recursos.sistemaveme.com/node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+	<script src="https://recursos.sistemaveme.com/node_modules/gsap/dist/ScrollToPlugin.min.js"></script>
+
+	<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+	<script type="importmap">
+	{
+		"imports": {
+			"three": "https://recursos.sistemaveme.com/node_modules/three/build/three.module.js",
+			"three/addons/": "https://recursos.sistemaveme.com/node_modules/three/examples/jsm/"
+		}
+	}
+	</script>
+
+	
+
+	
+</head>
+<body>
+
+    <div class="loader">
+		<p>Cargando... por favor espere</p>
+		<div class="progress"></div>
+	</div>
+	<nav class="nav--bar">
+		<img class="logo" src="images/logo.svg" >
+		<button class="button--navbar">COMPRA AHORA</button>
+	</nav>
+
+	<div class="container">
+		<section class="section first">
+			<div class="section--one--container">
+				<h1>Taladro Perfecto</h1>
+				<p>Velocidad variable para un máximo control con la punta de los dedos para todas las aplicaciones de perforación. Sistema de cepillo inverso para un par y potencia completos en avance y retroceso, botón de bloqueo para uso continuo.</p>
+				<button class="button--hero">SABER MÁS</button>
+			</div>
+		</section>
+
+		<section class="section second">
+			<div class="section--two--container">
+				<h2>Cómodo de usar</h2>
+				<p>Diseño ergonómico de taladro percutor reversible con posiciones de agarre óptimas, peso ligero y cuerpo de plástico aislado a prueba de golpes, brocas fáciles de cambiar</p>
+			</div>
+			<div class="custom--bg"></div>
+		</section>
+
+		<section class="section third">
+			<div class="section--third--container">
+				<h2>Madera y metal</h2>
+				<p>Admite perforaciones en madera y metal. Las brocas para metal no forman parte de los componentes incluidos con el producto. El cliente puede adquirir brocas para metal y se pueden utilizar para taladrar superficies metálicas</p>
+				<button class="button--customize">PERSONALIZAR</button>
+			</div>
+		</section>
+
+		<footer>
+			<button class="button--footer">VOLVER ARRIBA</button>
+		</footer>
+	</div>
+
+	<div id="webgi-canvas-container">
+		<canvas id="webgi-canvas"></canvas>
+		<button class="button--customize button--exit">SALIR</button>
+	</div>
+
+	<div class="customizer--container">
+		<ul class="strap--colors">
+			<li class="button--colors yellow"></li>
+			<li class="button--colors red"></li>
+			<li class="button--colors black"></li>
+		</ul>
+	</div>
+
+	<script type="module">
+
+		import * as THREE from 'three';
+	</script>
+
+	<script src="src/index.js"></script>
+	
+    
+</body>
+</html>
